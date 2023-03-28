@@ -1,5 +1,7 @@
 package com.aomined.baseapp.di
 
+import com.aomined.baseapp.data.network.QuoteApiClient
+import com.aomined.baseapp.data.network.QuoteService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,9 +22,15 @@ object NetworkModule {
             .build()
     }
 
-    /*@Singleton
+    @Singleton
     @Provides
     fun provideQuoteApiClient(retrofit: Retrofit):QuoteApiClient{
         return retrofit.create(QuoteApiClient::class.java)
-    }*/
+    }
+
+    @Singleton
+    @Provides
+    fun provideService(apiClient: QuoteApiClient):QuoteService{
+        return QuoteService(apiClient)
+    }
 }

@@ -75,4 +75,28 @@ dependencies {
     //Testing avanzado
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.3"
     testImplementation "androidx.arch.core:core-testing:2.2.0"
+
+    //Lottie
+    implementation 'com.airbnb.android:lottie:5.2.0'
+
+    //Toasty
+    implementation 'com.github.GrenderG:Toasty:1.5.2'
+
+    // Intuitive size dp
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+
+    //Room
+    implementation "androidx.room:room-runtime:2.5.1"
+    implementation "androidx.room:room-ktx:2.5.1"
+    // To use Kotlin annotation processing tool (kapt)
+    kapt "androidx.room:room-compiler:2.5.1"
+
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    //permissions
+    implementation 'com.vmadalin:easypermissions-ktx:1.0.0'
+
+    // If you want to use the GPU Filters
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+    implementation 'jp.wasabeef:picasso-transformations:2.4.0'
+    implementation 'com.squareup.picasso:picasso:2.8'
 }
